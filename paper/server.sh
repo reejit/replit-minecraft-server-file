@@ -32,12 +32,12 @@ download() {
     #echo JRE downloaded
     wget -O server.jar "https://papermc.io/api/v1/paper/1.16.5/latest/download"
     echo Paper downloaded
-    wget -O server.properties "https://file.fdmz17.repl.co/minecraft_java/server.properties"
+    wget -O server.properties "https://raw.githubusercontent.com/FDMZ17/replit-minecraft-server-file/main/server.properties"
     echo Server properties downloaded
     echo "eula=true" > eula.txt
     echo Agreed to Mojang EULA
     wget -O ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-    wget https://file.fdmz17.repl.co/minecraft_java/world/world.zip
+    wget https://raw.githubusercontent.com/FDMZ17/replit-minecraft-server-file/main/world/world.zip
     unzip -o world.zip
     unzip -o ngrok.zip
     rm -rf world.zip
